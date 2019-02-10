@@ -1,0 +1,129 @@
+@import './styles.scss';
+
+.slider {
+  max-width: 100%;
+  width: 50%;
+  min-width: 520px;
+  height: 320px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.slide {
+  padding: 32px;
+  height: 320px;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.slick-dots {
+  display: flex !important;
+  bottom: 30px !important;
+  left: 26px !important;
+}
+
+.slick-prev:before {
+  color: transparent;
+  margin: 0 0 2px 2px;
+  border: solid $gold;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.slick-next:before {
+  color: transparent;
+  margin: 0 0 2px 2px;
+  border: solid $gold;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+}
+
+.slick-prev {
+  left: -64px;
+}
+
+.slick-next {
+  right: -64px;
+}
+
+.slick-dots li button:before {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.slide-left {
+  height: 100%;
+}
+
+.slide__name {
+  font-size: 32px;
+  color: $charcoal;
+  font-weight: 300;
+}
+
+.slide__name--decoration {
+  padding-right: 3px;
+  font-size: 32px;
+  font-weight: 500;
+  color: $charcoal;
+  font-weight: 500;
+}
+
+.slide__desc {
+  font-size: 18px;
+  margin: 48px 0 16px 0;
+  color: $charcoal;
+
+}
+
+.slide__anchor {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 300;
+  color: $charcoal;
+  &:hover {
+    background: linear-gradient(#c0b283, #c0b283);
+    background-repeat: no-repeat;
+    background-size: 100% 25%;
+    background-position: bottom left;
+  }
+}
+
+.slide__img {
+  width: 100%;
+}
+
+
+// slider2
+.slider2 {
+  top: -88px;
+}
+
+.slider2 .slick-next {
+  right: 64px;
+  z-index: 99;
+}
+
+.slider2 .slick-prev {
+  left: 64px;
+  z-index: 99;
+}
+
+@media screen and (max-width: 1489px) {
+  .slide__name, .slide__name--decoration {
+    font-size: 28px;
+  }
+}
+
+//.slider2 .slick-dots {
+//  left: unset !important;
+//  z-index: 10 !important;
+//}
